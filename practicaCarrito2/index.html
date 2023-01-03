@@ -14,7 +14,8 @@
                 <div class="card">
                     <div class="card-body">
                         <h5c class="card-title"> Frutilla 🍓 </h5>
-                            <button type="button" class="btn btn-outline-primary" data-fruta="frutilla">Agregar</button>   
+                            <p class="lead">$300</p>
+                            <button type="button" class="btn btn-outline-primary" data-fruta="frutilla" data-precio="300">Agregar</button>   
                     </div>
                 </div>
             </article>
@@ -23,7 +24,8 @@
                 <div class="card">
                     <div class="card-body">
                         <h5c class="card-title"> Banana 🍌 </h5>
-                            <button type="button" class="btn btn-outline-primary" data-fruta="banana">Agregar</button>
+                            <p class="lead">$100</p>
+                            <button type="button" class="btn btn-outline-primary" data-fruta="banana" data-precio="100">Agregar</button>
                 </div>
             </article>
 
@@ -31,47 +33,47 @@
                 <div class="card">
                     <div class="card-body">
                         <h5c class="card-title"> Manzana 🍏 </h5>
-                            <button type="button" class="btn btn-outline-primary" data-fruta="Manzana">Agregar</button>                        
+                            <p class="lead">$200</p>
+                            <button type="button" class="btn btn-outline-primary" data-fruta="Manzana" data-precio="200">Agregar</button>                        
                 </div>
                 </div>
             </article>
 
         </div>
     </main>
-    <!-- Esto es un comentario 
-    <secction class=" container mt-5">
-        <ul class="list-group" id="carrito">
-            <li class="list-group-item d-flex justify-content-between align-item-center">  </li>
-
-            <span class="lead">Frutilla</span> 
-            <span class="badge bg-primary rounded-pill"> 12 </span>
-
-        </ul>
-    </secction>-->
-    <secction class="container mt-3">
-        <ul class="list-group" id="carrito">
-           
-        </ul>
-        <!-- <ul class="list-group" id="carrito">
-            <li class="list-group-item d-flex justify-content-between align-item-center">
-                <span class="lead">Banana</span> 
-                <span class="badge bg-primary rounded-pill"> 10 </span>
-            </li> 
-        </ul>
-        <ul class="list-group" id="carrito">
-            <li class="list-group-item d-flex justify-content-between align-item-center">
-                <span class="lead">Manzana</span> 
-                <span class="badge bg-primary rounded-pill"> 08 </span>
-            </li> 
-        </ul>-->
+        <secction class="container mt-3">
+        <ul class="list-group" id="carrito"></ul>
+        
     </secction>
     
+    <footer id="footer" class="container mt-3">
+        <template id="templateFooter">
+            <div class="card ">
+                <div class="card-body d-flex justify-content-between" >
+                    <p class="lead mb-0">Total $ <span> 1500$</span></p> <!--mb-0 es para alinear el boton con el texto del span-->
+                    <button type="button" class="btn btn-outline-info">Finalizar Compra</button>
+                </div>
+            </div>
+        </template>
+    </footer>
+    
     <template id="template">
+        <li class="list-group-item bg-secondary text-white">
+            <span class="badge bg-primary rounded-pill align-middle"> 12 </span>
+            <span class="lead align-middle">Frutilla</span> 
+        </li> 
         <li class="list-group-item d-flex justify-content-between align-item-center">
-            <span class="lead">Frutilla</span> 
-            <span class="badge bg-primary rounded-pill"> 12 </span>
+            <div>
+                <p class="lead mb-0"> total: $<span>300</span></p>
+            </div>
+            <div>
+                <!--BOTONES-->
+                <button class="btn btn-sm btn-danger">Quitar</button>
+                <button class="btn btn-sm btn-success">Agregar</button>
+            </div>
         </li> 
     </template>
+
     <template id="template">
         <li class="list-group-item d-flex justify-content-between align-item-center">
             <span class="lead">Banana</span> 
